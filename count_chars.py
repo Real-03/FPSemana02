@@ -1,10 +1,11 @@
 sentence = input()
-sentence = sentence.lower()
 contador=0
 thisdict = {}
 
 while(contador<len(sentence)):
-    if(sentence[contador].isalpha() ):
+    print(sentence[contador])
+    if(not(sentence[contador].isspace())):
+        
         thisdict[sentence[contador]] = sentence.count(sentence[contador])
     contador+=1
 

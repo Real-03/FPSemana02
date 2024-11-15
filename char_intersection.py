@@ -8,8 +8,8 @@ for i in x:
     a.add(i)
 for j in x2:
     b.add(j)
-
+text=""
 for k in a.intersection(b):
-    print(k, end =" ")
-
+    text+=k+" "
+print(text.strip())
 
